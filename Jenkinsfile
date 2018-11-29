@@ -23,13 +23,13 @@ pipeline {
 			steps {
 				parallel "first": {
 						script {
-							echo 'Hello, First'
+							echo 'Hello, First API HIT'
 							curl 'http://localhost:3000'
 						}
 					},
 					"second": {
 						script {
-							echo 'Hello, Second'
+							echo 'Hello, Second API HIT'
 							curl 'http://localhost:3001'
 						}
 					}
