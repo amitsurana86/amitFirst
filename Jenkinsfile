@@ -3,13 +3,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-				parallel 
-					'first': {
+				parallel "first": {
 						script {
 							echo 'Hello, First'
 						}
 					},
-					'second': {
+					"second": {
 						script {
 							echo 'Hello, Second'
 						}
