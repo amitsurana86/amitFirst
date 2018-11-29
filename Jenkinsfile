@@ -7,7 +7,7 @@ pipeline {
 						script {
 							echo 'Hello, First'
 							bat 'set PORT=3000'
-							bat 'npm start &'
+							bat 'node index.js &'
 						}
 					},
 					"second": {
