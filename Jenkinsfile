@@ -5,7 +5,7 @@ pipeline {
             steps {
 				script {
 					echo 'Hello, Maven'
-					bat "npm start"
+					bat "nohup npm start"
 				}
             }
         }
