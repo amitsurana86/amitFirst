@@ -5,7 +5,7 @@ pipeline {
             steps {
 				script {
 					echo 'Hello, Maven'
-					bat "nohup npm start"
+					bat "forever start index.js"
 				}
             }
         }
