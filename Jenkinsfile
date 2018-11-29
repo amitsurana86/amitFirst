@@ -6,13 +6,15 @@ pipeline {
 				parallel "first": {
 						script {
 							echo 'Hello, First'
-							bat 'PORT=3000 npm start &'
+							bat 'set PORT=3000'
+							bat 'npm start &'
 						}
 					},
 					"second": {
 						script {
 							echo 'Hello, Second'
-							bat 'PORT=3001 npm start &'
+							bat 'set PORT=3001'
+							bat 'npm start &'
 						}
 					}
 				}
