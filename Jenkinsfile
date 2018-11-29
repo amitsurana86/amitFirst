@@ -5,7 +5,6 @@ pipeline {
             steps {
 				script {
 					echo 'Hello, Maven'
-					bat "forever start index.js"
 				}
             }
         }
