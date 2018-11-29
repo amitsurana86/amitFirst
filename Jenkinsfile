@@ -3,8 +3,17 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-				script {
-					echo 'Hello, Maven'
+				parallel {
+					stage('first') {
+						script {
+							echo 'Hello, First'
+						}
+					}
+					stage('second') {
+						script {
+							echo 'Hello, Second'
+						}
+					}
 				}
             }
         }
